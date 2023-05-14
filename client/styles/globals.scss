@@ -9,6 +9,17 @@
 body {
   overflow-x: hidden;
   font-family: "Noto Sans", sans-serif;
+
+  input[type="time"] {
+    height: 55px;
+    width: 250px;
+    border-radius: 5px;
+    padding: 0 25px;
+  }
+
+  .pages {
+    margin-top: 100px;
+  }
   .search-input {
     background-color: $white;
     border-radius: 5px;
@@ -33,6 +44,7 @@ body {
     font-size: 1.25rem;
     padding-top: 3px;
     cursor: pointer;
+    margin-top: 15px;
   }
 
   .primary-btn:hover {

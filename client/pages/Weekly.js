@@ -1,7 +1,7 @@
 import React from "react";
 const Weekly = () => {
   return (
-    <div className="Weekly">
+    <div className="Weekly pages">
       <div className="container">
         <h1 className="content-header">Weekly</h1>
       </div>
