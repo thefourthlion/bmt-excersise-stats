@@ -1,3 +1,4 @@
+import "../styles/Input.scss";
 import "../styles/Footer.scss";
 import "../styles/Navbar.scss";
 import "../styles/Stats.scss";
