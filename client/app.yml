@@ -1,0 +1,5 @@
+apps:
+  - script: ./server.js
+    cwd: /home/everettdeleon/bmt/client/
+    name: "bmt-client"
+    interpreter: /usr/bin/node
