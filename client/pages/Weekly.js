@@ -9,7 +9,7 @@ const Weekly = () => {
   const [mile, setMile] = useState("");
 
   const sendFormToDb = () => {
-    Axios.post("https://localhost:3001/api/weekly/create", {
+    Axios.post("https://localhost:3002/api/weekly/create", {
       pushUps: pushUps,
       sitUps: sitUps,
       mile: mile,
