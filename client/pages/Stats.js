@@ -8,21 +8,25 @@ const Stats = () => {
   const [lastWeekly, setLastWeekly] = useState([]);
   const [secondToLastWeekly, setSecondToLastWeekly] = useState([]);
   const fetchDailies = async () => {
-    await Axios.get("http://localhost:3002/api/daily/read").then((res) => {
-      const data = res.data;
-      setDailies(data);
-      setLastDaily(data[data.length - 1]);
-    });
+    await Axios.get("https://api.bmt.everettdeleon.com/api/daily/read").then(
+      (res) => {
+        const data = res.data;
+        setDailies(data);
+        setLastDaily(data[data.length - 1]);
+      }
+    );
   };
 
   const fetchWeeklies = async () => {
-    await Axios.get("http://localhost:3002/api/weekly/read").then((res) => {
-      const data = res.data;
-      setWeeklies(data);
-      setFirstWeekly(data[0]);
-      setLastWeekly(data[data.length - 1]);
-      setSecondToLastWeekly(data[data.length - 2]);
-    });
+    await Axios.get("https://api.bmt.everettdeleon.com/api/weekly/read").then(
+      (res) => {
+        const data = res.data;
+        setWeeklies(data);
+        setFirstWeekly(data[0]);
+        setLastWeekly(data[data.length - 1]);
+        setSecondToLastWeekly(data[data.length - 2]);
+      }
+    );
   };
 
   useEffect(() => {
