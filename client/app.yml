@@ -1,5 +1,5 @@
 apps:
   - script: ./server.js
-    cwd: /home/everettdeleon/bmt/client/
+    cwd: /home/everettdeleon/bmt-excersise-stats/client/
     name: "bmt-client"
     interpreter: /usr/bin/node
