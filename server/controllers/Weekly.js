@@ -1,7 +1,5 @@
 const Weekly = require("../models/Weekly");
 exports.createWeekly = async (req, res) => {
-  const page = req.query.page || 0;
-  const limit = req.query.limit || 25;
   try {
     let newWeekly = new Weekly({
       id: req.body.id,
@@ -17,6 +15,8 @@ exports.createWeekly = async (req, res) => {
   }
 };
 exports.readWeekly = async (req, res) => {
+  const page = req.query.page || 0;
+  const limit = req.query.limit || 25;
   try {
     Weekly.find({}, (err, result) => {
       if (err) {

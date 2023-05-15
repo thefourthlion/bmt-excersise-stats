@@ -1,7 +1,5 @@
 const Daily = require("../models/Daily");
 exports.createDaily = async (req, res) => {
-  const page = req.query.page || 0;
-  const limit = req.query.limit || 25;
   try {
     let newDaily = new Daily({
       id: req.body.id,
@@ -17,6 +15,8 @@ exports.createDaily = async (req, res) => {
   }
 };
 exports.readDaily = async (req, res) => {
+  const page = req.query.page || 0;
+  const limit = req.query.limit || 25;
   try {
     Daily.find({}, (err, result) => {
       if (err) {
