@@ -34,8 +34,8 @@ export default function Navbar() {
         </li>
       </ul>
 
-      <Link className="nav-link pc-none" href="/">
-        BMT
+      <Link className="nav-link " href="/">
+        <p className="pc-none">BMT</p>
       </Link>
 
       <div className="burger" onClick={() => setShowLinks(!showLinks)}>

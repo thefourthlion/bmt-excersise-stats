@@ -10,15 +10,16 @@ body {
   overflow-x: hidden;
   font-family: "Noto Sans", sans-serif;
 
-  input[type="time"] {
-    height: 55px;
-    width: 250px;
-    border-radius: 5px;
-    padding: 0 25px;
-  }
-
   .green {
     color: green;
+  }
+
+  h1 {
+    margin-bottom: 25px;
+  }
+
+  h3 {
+    font-weight: bold;
   }
 
   .pages {
@@ -28,6 +29,16 @@ body {
     background-color: $white;
     border-radius: 5px;
     border-color: $black;
+  }
+
+  .search-input-label {
+    height: 55px;
+    width: 250px;
+  }
+
+  .search-input-form-control {
+    height: 55px;
+    width: 250px;
   }
 
   .search-input-form-control:focus {
@@ -49,6 +60,7 @@ body {
     padding-top: 3px;
     cursor: pointer;
     margin-top: 15px;
+    font-weight: bold;
   }
 
   .primary-btn:hover {
