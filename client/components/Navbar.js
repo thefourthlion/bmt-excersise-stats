@@ -22,7 +22,7 @@ export default function Navbar() {
         </li>
 
         <li className="nav-item">
-          <Link className="nav-link phone-none" href="/Daily">
+          <Link className="nav-link " href="/Daily">
             Daily
           </Link>
         </li>

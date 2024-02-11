@@ -179,6 +179,7 @@ def create_package_json():
     print("✅ package.json file created.")
     writeToFile(package_json_path, package_json_content)
     
+    
 def create_index_page():
   index_style_path = f"{style_path}/index.scss"
   index_style_content = ".Home{}"
