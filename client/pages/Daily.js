@@ -15,7 +15,7 @@ const Daily = () => {
   const [dailies, setDailies] = useState([]);
 
   const sendFormToDb = () => {
-    Axios.post("https://api.bmt.everettdeleon.com/api/daily/create", {
+    Axios.post("http://localhost:4005/api/daily/create", {
       id: id,
       pushUps: pushUps,
       sitUps: sitUps,
@@ -27,7 +27,7 @@ const Daily = () => {
   };
 
   const fetchData = async () => {
-    await Axios.get("https://api.bmt.everettdeleon.com/api/daily/read").then(
+    await Axios.get("http://localhost:4005/api/daily/read").then(
       (res) => {
         const data = res.data;
         setDailies(data);

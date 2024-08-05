@@ -1,0 +1,13 @@
+services:
+  client:
+    build:
+      context: ./
+      dockerfile: Dockerfile
+    container_name: bmt-excersize-client
+    ports:
+      - "4005:4005"
+    environment:
+      - PORT=4005
+    volumes:
+      - ./:/bmt-excersize-client
+      - /bmt-excersize-client/node_modules

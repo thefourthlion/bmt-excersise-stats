@@ -5,7 +5,7 @@ const DailyTask = () => {
   const [lastWeekly, setLastWeekly] = useState([]);
 
   const fetchLastWeekly = async () => {
-    await Axios.get("https://api.bmt.everettdeleon.com/api/weekly/read").then(
+    await Axios.get("http://localhost:4005/api/weekly/read").then(
       (res) => {
         const data = res.data;
         setLastWeekly(data[data.length - 1]);

@@ -15,7 +15,7 @@ const Weekly = () => {
   const [dailies, setDailies] = useState([]);
 
   const sendFormToDb = () => {
-    Axios.post("https://api.bmt.everettdeleon.com/api/Weekly/create", {
+    Axios.post("http://localhost:4005/api/Weekly/create", {
       id: id,
       pushUps: pushUps,
       sitUps: sitUps,
@@ -27,7 +27,7 @@ const Weekly = () => {
   };
 
   const fetchData = async () => {
-    await Axios.get("https://api.bmt.everettdeleon.com/api/Weekly/read").then(
+    await Axios.get("http://localhost:4005/api/Weekly/read").then(
       (res) => {
         const data = res.data;
         setDailies(data);

@@ -8,7 +8,7 @@ const Stats = () => {
   const [lastWeekly, setLastWeekly] = useState([]);
   const [secondToLastWeekly, setSecondToLastWeekly] = useState([]);
   const fetchDailies = async () => {
-    await Axios.get("https://api.bmt.everettdeleon.com/api/daily/read").then(
+    await Axios.get("http://localhost:4005/api/daily/read").then(
       (res) => {
         const data = res.data;
         setDailies(data);
@@ -18,7 +18,7 @@ const Stats = () => {
   };
 
   const fetchWeeklies = async () => {
-    await Axios.get("https://api.bmt.everettdeleon.com/api/weekly/read").then(
+    await Axios.get("http://localhost:4005/api/weekly/read").then(
       (res) => {
         const data = res.data;
         setWeeklies(data);
